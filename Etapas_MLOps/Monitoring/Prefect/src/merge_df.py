@@ -4,6 +4,9 @@ from prefect import task
 
 @task(name='merge_df')
 def run(df_1, df_2):
+    '''
+    Combinamos nuestros dataframes
+    '''
 
     new_df = pd.merge(
         df_1.reset_index(),
